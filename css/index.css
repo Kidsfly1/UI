@@ -1,0 +1,18 @@
+html, body{
+    font-family:'Saira';
+}
+header {
+background-color:  turquoise;
+}
+footer {
+    background-color:  turquoise;
+}
+
+nav {
+    display:flex;
+
+}
+
+button{
+    background-color: turquoise;
+}
