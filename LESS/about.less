@@ -1,0 +1,165 @@
+// About Us Content //
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin: 50px auto;
+    border: 4px solid #BCC5D3;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    position: relative;
+
+    @media @tablet {
+        width: 80%;
+    }
+
+    @media @mobile {
+        width: 90%;
+    }
+
+    h1 {
+        margin-bottom: 5%;
+    }
+
+    a {
+        text-decoration: none;
+        color: @font-color;
+
+        &:hover {
+            color: @main-color;
+        }
+    }
+}
+
+//about us 
+@media @tablet {
+    border-top: 10px solid #5680f8;
+    border-left: 10px solid #5680f8;
+}
+// end of about us
+//first card row
+.us-row1 {
+    .custom-row();
+    margin-top: 10%;
+
+    @media @tablet {
+        width: 90%;
+    }
+}
+.card1, .card2, .card3 {
+    .custom-card();
+
+    @media @tablet {
+        width: 25%;
+    }
+
+    @media @mobile {
+        width: 30%;
+    }
+    
+
+    img {
+        .custom-img();
+    }
+
+    h3 {
+        .custom-h3();
+         
+        @media @mobile {
+            text-align: center;
+            margin: 8px 12px;
+        }
+        
+    }
+
+    h4 {
+        .custom-h4();
+
+        @media @mobile {
+            margin: 8px;
+        }
+       
+    }
+
+    h5 {
+        .custom-h5();
+    }
+
+    a {
+        
+        .custom-link();
+        
+    }
+
+}
+
+// Ends first card row //
+
+//Second card row
+.us-row2 {
+    .custom-row();
+    margin-top: 5%;
+
+    @media @tablet {
+        width: 90%;
+    }
+
+    
+}
+
+.card4, .card5, .card6 {
+    .custom-card();
+
+    @media @tablet {
+        width: 25%;
+    }
+
+    @media @mobile {
+        width: 30%;
+    }
+
+    img {
+        .custom-img();
+    }
+
+    h3 {
+        .custom-h3();
+        
+        @media @mobile {
+            text-align: center;
+            margin: 8px 25px;
+        }
+    }
+
+    h4 {
+        .custom-h4();
+
+        @media @mobile {
+            margin: 8px;
+        }
+       
+    }
+
+    h5 {
+        .custom-h5();
+    }
+
+    a {
+        
+        .custom-link();
+        
+    }
+
+     .card6 h3{
+    @media @mobile {
+        margin-top: 20px;
+         }
+     }
+}
+//end second row
