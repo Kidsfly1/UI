@@ -33,6 +33,12 @@ button{
     width: 50%;
     margin-top:3%;
     margin-bottom: 3%;
+        @media @mobile {
+            width: 50%;
+            margin-top: 5%; 
+            margin-bottom: 5%;
+            margin-left: 100px;
+    }
   }
   .intro{
       display:block;
@@ -40,3 +46,41 @@ button{
       margin-top:3%;
       margin-bottom:5%; 
   }
+  input.MyButton {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:5%; 
+  width: 30%;
+    
+    padding: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    background:@button-bg;
+    line-height: 20px;
+    color:#1D1C1C;
+    
+    border-radius: 10px;
+    
+    
+    }
+    input.MyButton:hover {
+    color: #ffff00;
+    background: #000;
+    border: 1px solid #fff;
+    }
+
+    .first_line {
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .second_line{
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    .third_line{
+        margin-bottom: 10%;
+        text-align: center;
+    }
