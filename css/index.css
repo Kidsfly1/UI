@@ -192,6 +192,7 @@ nav a {
 }
 header {
   width: 100%;
+  height: 80px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%) rgba(12, 198, 238, 0.5);
 }
 @media (max-width: 800px) {
@@ -204,11 +205,13 @@ header {
 @media (max-width:500px) {
   header {
     width: 100%;
+    height: 120px;
     margin-left: 0;
     margin-right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }
 .co_name {
@@ -282,7 +285,7 @@ input.MyButton {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
-  width: 30%;
+  width: 22%;
   padding: 20px;
   cursor: pointer;
   font-weight: 500;
@@ -298,13 +301,13 @@ input.MyButton:hover {
   border: 1px solid #fff;
 }
 .first_line {
-  margin-bottom: 10%;
+  margin-bottom: 2%;
   text-align: center;
   font-size: 46px;
   line-height: 56px;
 }
 .second_line {
-  margin-bottom: 10%;
+  margin-bottom: 3%;
   text-align: center;
   font-size: 26px;
   line-height: 32px;
@@ -312,12 +315,15 @@ input.MyButton:hover {
   font-weight: 500;
 }
 .third_line {
-  margin-bottom: 10%;
+  margin-bottom: 2%;
   text-align: center;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 34px;
+}
+.co_name {
+  margin-bottom: 0.5%;
 }
 .about-us {
   display: flex;
@@ -569,4 +575,12 @@ input.MyButton:hover {
   line-height: 32px;
   font-style: normal;
   font-weight: 500;
+}
+.about {
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-bottom: 3%;
+}
+.profile_pic {
+  height: 170px;
 }
