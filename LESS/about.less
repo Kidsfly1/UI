@@ -49,18 +49,26 @@
     margin-top: 10%;
 
     @media @tablet {
-        width: 90%;
+        width: 80%;
+    }
+    @media @mobile {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        
     }
 }
 .card1, .card2, .card3 {
     .custom-card();
 
     @media @tablet {
-        width: 25%;
+        width: 35%;
+        height: 50%;
+        margin: 2%;
     }
 
     @media @mobile {
-        width: 30%;
+        width: 80%;
     }
     
 
@@ -104,10 +112,17 @@
 //Second card row
 .us-row2 {
     .custom-row();
-    margin-top: 5%;
+    margin-top: 10%;
 
     @media @tablet {
-        width: 90%;
+        width: 80%;
+        height: 70%;
+    }
+    @media @mobile {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        
     }
 
     
@@ -117,12 +132,15 @@
     .custom-card();
 
     @media @tablet {
-        width: 25%;
+        width: 35%;
+        height: 50%;
+        margin: 2%;
     }
 
     @media @mobile {
-        width: 30%;
+        width: 80%;
     }
+    
 
     img {
         .custom-img();
@@ -130,11 +148,12 @@
 
     h3 {
         .custom-h3();
-        
+         
         @media @mobile {
             text-align: center;
-            margin: 8px 25px;
+            margin: 8px 12px;
         }
+        
     }
 
     h4 {
@@ -156,11 +175,6 @@
         
     }
 
-     .card6 h3{
-    @media @mobile {
-        margin-top: 20px;
-         }
-     }
 }
 //end second row
 
@@ -172,6 +186,11 @@
         line-height: 32px;
         font-style: normal;
         font-weight: 500;
+        @media @mobile {
+            text-align: center;
+            margin-right:5%;
+            margin-left:2%;
+        }
 }
 .about{
     margin-top: 5%;
@@ -197,7 +216,6 @@
     padding-bottom: 2%;
     @media (max-width: 500px){
         width: 100%;
-        background: rgb(247, 202, 246);
     }
 }
 .title-contactus{

@@ -23,8 +23,8 @@ button{
         border-radius:10px;
         height:30px;
         padding:2%;
-        .size (center, 15px);
-      }
+}
+        
 
 .family {
     display: block;
@@ -60,11 +60,20 @@ button{
     background:@button-bg;
     line-height: 20px;
     color:#1D1C1C;
-    
     border-radius: 10px;
+
+    @media @tablet {
+        width: 100%;
+        margin-top: 5%; 
+        margin-bottom: 5%;
     
-    
+        @media @mobile {
+        width: 100%;
+        margin-top: 5%; 
+        margin-bottom: 5%;
+
     }
+}
     input.MyButton:hover {
     color: #ffff00;
     background: #000;
@@ -99,3 +108,17 @@ button{
     .co_name{
         margin-bottom:.5%;
     }
+    
+    .book{
+        @media @tablet {
+            width: 100%;
+            margin-top: 5%; 
+            margin-bottom: 5%;  
+    }
+        @media @mobile {
+            width: 100%;
+            margin-top: 5%; 
+            margin-bottom: 5%;  
+    }
+}
+  }

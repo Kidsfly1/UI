@@ -170,14 +170,14 @@ footer {
 nav {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 3%;
+  margin-bottom: 5%;
 }
 @media (max-width:500px) {
   nav {
     width: 60%;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    align-content: space-between;
   }
 }
 nav a {
@@ -188,6 +188,7 @@ nav a {
 @media (max-width:500px) {
   nav a {
     font-size: 1.3rem;
+    text-align: center;
   }
 }
 header {
@@ -211,7 +212,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 }
 .co_name {
@@ -255,8 +255,6 @@ button {
   border-radius: 10px;
   height: 30px;
   padding: 2%;
-  text-align: center;
-  font-size: 15px;
 }
 .family {
   display: block;
@@ -295,18 +293,32 @@ input.MyButton {
   color: #1D1C1C;
   border-radius: 10px;
 }
-input.MyButton:hover {
+@media (max-width: 800px) {
+  input.MyButton {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 800px) and (max-width:500px) {
+  input.MyButton {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+input.MyButton input.MyButton:hover {
   color: #ffff00;
   background: #000;
   border: 1px solid #fff;
 }
-.first_line {
+input.MyButton .first_line {
   margin-bottom: 2%;
   text-align: center;
   font-size: 46px;
   line-height: 56px;
 }
-.second_line {
+input.MyButton .second_line {
   margin-bottom: 3%;
   text-align: center;
   font-size: 26px;
@@ -314,7 +326,7 @@ input.MyButton:hover {
   font-style: normal;
   font-weight: 500;
 }
-.third_line {
+input.MyButton .third_line {
   margin-bottom: 2%;
   text-align: center;
   font-style: normal;
@@ -322,8 +334,22 @@ input.MyButton:hover {
   font-size: 28px;
   line-height: 34px;
 }
-.co_name {
+input.MyButton .co_name {
   margin-bottom: 0.5%;
+}
+@media (max-width: 800px) {
+  input.MyButton .book {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width:500px) {
+  input.MyButton .book {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 }
 .about-us {
   display: flex;
@@ -375,7 +401,14 @@ input.MyButton:hover {
 }
 @media (max-width: 800px) {
   .us-row1 {
-    width: 90%;
+    width: 80%;
+  }
+}
+@media (max-width:500px) {
+  .us-row1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .card1,
@@ -394,14 +427,16 @@ input.MyButton:hover {
   .card1,
   .card2,
   .card3 {
-    width: 25%;
+    width: 35%;
+    height: 50%;
+    margin: 2%;
   }
 }
 @media (max-width:500px) {
   .card1,
   .card2,
   .card3 {
-    width: 30%;
+    width: 80%;
   }
 }
 .card1 img,
@@ -469,11 +504,19 @@ input.MyButton:hover {
   align-content: center;
   margin: 0 auto;
   width: 70%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 @media (max-width: 800px) {
   .us-row2 {
-    width: 90%;
+    width: 80%;
+    height: 70%;
+  }
+}
+@media (max-width:500px) {
+  .us-row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .card4,
@@ -492,14 +535,16 @@ input.MyButton:hover {
   .card4,
   .card5,
   .card6 {
-    width: 25%;
+    width: 35%;
+    height: 50%;
+    margin: 2%;
   }
 }
 @media (max-width:500px) {
   .card4,
   .card5,
   .card6 {
-    width: 30%;
+    width: 80%;
   }
 }
 .card4 img,
@@ -520,7 +565,7 @@ input.MyButton:hover {
   .card5 h3,
   .card6 h3 {
     text-align: center;
-    margin: 8px 25px;
+    margin: 8px 12px;
   }
 }
 .card4 h4,
@@ -561,13 +606,6 @@ input.MyButton:hover {
 .card6 a .fa-github {
   background: black;
 }
-@media (max-width:500px) {
-  .card4 .card6 h3,
-  .card5 .card6 h3,
-  .card6 .card6 h3 {
-    margin-top: 20px;
-  }
-}
 .about_p {
   margin-bottom: 10%;
   text-align: center;
@@ -575,6 +613,13 @@ input.MyButton:hover {
   line-height: 32px;
   font-style: normal;
   font-weight: 500;
+}
+@media (max-width:500px) {
+  .about_p {
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 2%;
+  }
 }
 .about {
   margin-top: 5%;
@@ -599,7 +644,6 @@ input.MyButton:hover {
 @media (max-width: 500px) {
   .contactus {
     width: 100%;
-    background: #f7caf6;
   }
 }
 .title-contactus {
